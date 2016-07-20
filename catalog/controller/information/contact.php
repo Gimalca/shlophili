@@ -43,8 +43,10 @@ class ControllerInformationContact extends Controller {
 		$data['text_fax'] = $this->language->get('text_fax');
 		$data['text_open'] = $this->language->get('text_open');
 		$data['text_comment'] = $this->language->get('text_comment');
+		//$data['text_lastname'] = $this->language->get('entry_lastname');
 
 		$data['entry_name'] = $this->language->get('entry_name');
+		$data['entry_lastname'] = $this->language->get('entry_lastname');
 		$data['entry_email'] = $this->language->get('entry_email');
 		$data['entry_enquiry'] = $this->language->get('entry_enquiry');
 		$data['entry_captcha'] = $this->language->get('entry_captcha');
@@ -55,6 +57,11 @@ class ControllerInformationContact extends Controller {
 			$data['error_name'] = $this->error['name'];
 		} else {
 			$data['error_name'] = '';
+		}
+		if (isset($this->error['lastname'])) {
+			$data['error_lastname'] = $this->error['lastname'];
+		} else {
+			$data['error_lastname'] = '';
 		}
 
 		if (isset($this->error['email'])) {
@@ -113,6 +120,7 @@ class ControllerInformationContact extends Controller {
 				$data['locations'][] = array(
 					'location_id' => $location_info['location_id'],
 					'name'        => $location_info['name'],
+					'lastname'    => $location_info['lastname'],
 					'address'     => nl2br($location_info['address']),
 					'geocode'     => $location_info['geocode'],
 					'telephone'   => $location_info['telephone'],
@@ -128,6 +136,11 @@ class ControllerInformationContact extends Controller {
 			$data['name'] = $this->request->post['name'];
 		} else {
 			$data['name'] = $this->customer->getFirstName();
+		}
+		if (isset($this->request->post['lastname'])) {
+			$data['name'] = $this->request->post['lastname'];
+		} else {
+			$data['name'] = '';
 		}
 
 		if (isset($this->request->post['email'])) {

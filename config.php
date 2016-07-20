@@ -1,22 +1,22 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/shlophili/');
+define('HTTP_SERVER', 'http://shlophili/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/shlophili/');
+define('HTTPS_SERVER', 'http://shlophili/');
 
 // DIR
-define('DIR_APPLICATION', 'C:/wamp/www/shlophili/catalog/');
-define('DIR_SYSTEM', 'C:/wamp/www/shlophili/system/');
-define('DIR_LANGUAGE', 'C:/wamp/www/shlophili/catalog/language/');
-define('DIR_TEMPLATE', 'C:/wamp/www/shlophili/catalog/view/theme/');
-define('DIR_CONFIG', 'C:/wamp/www/shlophili/system/config/');
-define('DIR_IMAGE', 'C:/wamp/www/shlophili/image/');
-define('DIR_CACHE', 'C:/wamp/www/shlophili/system/cache/');
-define('DIR_DOWNLOAD', 'C:/wamp/www/shlophili/system/download/');
-define('DIR_UPLOAD', 'C:/wamp/www/shlophili/system/upload/');
-define('DIR_MODIFICATION', 'C:/wamp/www/shlophili/system/modification/');
-define('DIR_LOGS', 'C:/wamp/www/shlophili/system/logs/');
+define('DIR_APPLICATION', 'C:/localhost/www/shlophili/catalog/');
+define('DIR_SYSTEM', 'C:/localhost/www/shlophili/system/');
+define('DIR_LANGUAGE', 'C:/localhost/www/shlophili/catalog/language/');
+define('DIR_TEMPLATE', 'C:/localhost/www/shlophili/catalog/view/theme/');
+define('DIR_CONFIG', 'C:/localhost/www/shlophili/system/config/');
+define('DIR_IMAGE', 'C:/localhost/www/shlophili/image/');
+define('DIR_CACHE', 'C:/localhost/www/shlophili/system/cache/');
+define('DIR_DOWNLOAD', 'C:/localhost/www/shlophili/system/download/');
+define('DIR_UPLOAD', 'C:/localhost/www/shlophili/system/upload/');
+define('DIR_MODIFICATION', 'C:/localhost/www/shlophili/system/modification/');
+define('DIR_LOGS', 'C:/localhost/www/shlophili/system/logs/');
 
 // DB
 define('DB_DRIVER', 'mysqli');

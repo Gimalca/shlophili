@@ -246,8 +246,7 @@ $config = $this->registry->get('config');
 <div class="main-menu">
 <div class="container">
 <div class="row">
-	<!-- <div class="col-sm-1" style="z-index: 99999999; border-bottom: 2px solid #ebebeb; height: 103px;"></div> -->
-	<div class="col-sm-3" style="border-bottom: 2px solid #ebebeb; height: 103px;">
+    <div class="col-sm-12" style="border-bottom: 2px solid #ebebeb; ">
 		<div id="logo">
           <?php if ($logo) { ?>
           <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -256,7 +255,11 @@ $config = $this->registry->get('config');
           <?php } ?>
         </div>
 	</div>
-  <nav id="menu" class="col-sm-9" style="padding-top: 42px;">
+</div>
+<div class="row">
+	<!-- <div class="col-sm-1" style="z-index: 99999999; border-bottom: 2px solid #ebebeb; height: 103px;"></div> -->
+	
+  <nav id="menu" class="col-sm-12" style="">
     <div class="navbar-header">
       <a class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span id="category" class="visible-xs"><?php echo $text_category; ?></span><span class="slicknav_icon"><i class="fa fa-bars"></i></span></a>
     </div>
@@ -366,7 +369,7 @@ $config = $this->registry->get('config');
 								</a>
 							</div>
 						<?php } ?>
-						  <span><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></span>
+						  <!-- span><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></span-->
 						  <?php if ($category['children']) { ?>
 							<?php for ($i = 0; $i < count($category['children']);) { ?>
 								<ul>

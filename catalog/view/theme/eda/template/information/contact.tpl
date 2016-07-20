@@ -88,6 +88,15 @@
               </div>
             </div>
             <div class="required">
+              <label class="control-label" for="input-name">APELLIDO</label>
+              <div>
+                <input type="text" name="name" value="" id="input-name" class="form-control" />
+                <?php if ($error_lastname) { ?>
+                <div class="text-danger"><?php echo $error_lastname; ?></div>
+                <?php } ?>
+              </div>
+            </div>
+            <div class="required">
               <label class="control-label" for="input-email">E-MAIL</label>
               <div>
                 <input type="text" name="email" value="<?php echo $email; ?>" id="input-email" class="form-control" />
